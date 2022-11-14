@@ -22,6 +22,9 @@ MediaPipe 포즈 감지(Pose)
 Licence
 Apache License Version 2.0, January 2004
 
+Mediapipe 깃 허브 주소
+https://github.com/google/mediapipe.git
+
 MediaPipe
 MediaPipe란 구글에서 제공하는 AI 프레임워크로서, 비디오형식 데이터를 이용한 다양한 비전 AI 기능을 파이프라인 형태로 손쉽게 사용할 수 있도록 제공된다. AI 모델개발 및 수많은 데이터셋을 이용한 학습도 마친 상태로 제공되므로 간편하게 호출하여 사용하기만 하면 된다.
 기본적인 얼굴인식 이외에도 Pose 인식 등 다양한 비전AI 기능들이 제공되는데 본 서비스에서는 Pose만 사용한다.
@@ -43,6 +46,9 @@ Repetition Counting
 운동 영상을 통해 데이터를 구축한다.
 Pose Classification를 통해 동작을 분류하고, Repetition Counting을 통해 반복적인 움직임을 관측한다. 그 후 Pose Land Mark을 통해 x,y,z,의 움직임을 수집한다.
 
+출처
+https://google.github.io/mediapipe/solutions/pose_classification.html
+https://google.github.io/mediapipe/solutions/pose
 #### DFD
 
 
