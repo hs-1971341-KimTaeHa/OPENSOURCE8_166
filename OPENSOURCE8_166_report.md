@@ -118,9 +118,13 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 
 ![Result](https://velog.velcdn.com/images%2Foneul1213%2Fpost%2Fd8e515b8-addd-41c5-968e-163b4704cfc8%2Fpushup-openpose.gif)
 
+#### 오픈소스 출처
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
 #### DFD
 
-
+![DFD](https://user-images.githubusercontent.com/70803824/202853715-4a120cba-7559-4a59-ab2a-132e111ad327.png)
 
 #### 결론
 
