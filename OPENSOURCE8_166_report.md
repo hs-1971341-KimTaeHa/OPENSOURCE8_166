@@ -117,11 +117,10 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 
 ![Result](https://velog.velcdn.com/images%2Foneul1213%2Fpost%2Fd8e515b8-addd-41c5-968e-163b4704cfc8%2Fpushup-openpose.gif)
 
-<<<<<<< HEAD
 #### 오픈소스 출처
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
-=======
+
 MediaPipe 포즈 감지(Pose)
 
 Licence
@@ -147,8 +146,6 @@ Repetition Counting
 활용방안
 운동 영상을 통해 데이터를 구축한다.
 Pose Classification를 통해 동작을 분류하고, Repetition Counting을 통해 반복적인 움직임을 관측한다. 그 후 Pose Land Mark을 통해 x,y,z,의 움직임을 수집한다.
-
->>>>>>> refs/remotes/origin/main
 
 #### DFD
 
