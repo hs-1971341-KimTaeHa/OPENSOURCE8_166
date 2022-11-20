@@ -149,7 +149,7 @@ Pose Classification를 통해 동작을 분류하고, Repetition Counting을 통
 
 #### DFD
 
-![DFD](https://user-images.githubusercontent.com/70803824/202853715-4a120cba-7559-4a59-ab2a-132e111ad327.png)
+![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/202886656-3e3a4d51-1360-4157-b3a9-210ad6fe2f08.png)
 
 #### 결론
 
