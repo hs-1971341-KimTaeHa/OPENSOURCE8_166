@@ -191,6 +191,40 @@ https://google.github.io/mediapipe/solutions/pose
 
 ![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/202886656-3e3a4d51-1360-4157-b3a9-210ad6fe2f08.png)
 
+<hr>
+
+### <fitness_calculator>
+
+#### github 주소   
+https://github.com/manas3874/fitness-calculator      
+#### 라이센스      
+MIT License   
+
+#### 개요
+fitness calulator는 사용자의 BMI, BMR, 칼로리 필요량, 총 일일 에너지 소비량, 매크로 등을 계산하는 데 도움이 되는 오픈소스입니다.
+
+#### 기능   
+포함된 기능은 총 8가지로   
+1.BMR(기초 대사율)   
+2.BMI(체질량 지수)   
+3.BFP(체지방률)   
+4.이상체중   
+5.칼로리 필요량   
+6.TDEE(총 일일 에너지 소비량)   
+7.매크로   
+8.BAC(혈중 알코올 농도)   
+가 있습니다.   
+
+
+#### 활용 및 작동 방식
+이 오픈 소스로 사용자에 현재 상태 및 알맞은 목표와 필요한 칼로리양을 쉽게 알 수 있습니다.   
+이러한 기능 중 저희 어플에 사용하면 좋은 것들은 BMR, BMI, BFP, 칼로리 필요량, TDEE가 있습니다.   
+이러한 기능들을 사용하기 위해서는 어플 초기, 성별, 나이, 신장, 체중, 목, 허리, 엉덩이, 활동량을 입력합니다.   
+이후 변화 하는 변수들만 재입력하면 이후 계산을 통하여 원하는 값들의 반환이 가능합니다.   
+이중 활동량이라는 변수는 5가지의  있습니다. sedentary, light, moderate, active, extreme 왼쪽부터 오른쪽 순으로 활동 강도를 나타내며,   
+예를들어 직업이 계속 앉아있는 사무직이며, 운동을 주 1회 이하 하는 경우 sedentary, 자주 움직이는 직업에 매일 고강도의 운동을 하고있을경우 extreme, 식으로 선택하면 됩니다.
+
+
 #### 결론
 
 
