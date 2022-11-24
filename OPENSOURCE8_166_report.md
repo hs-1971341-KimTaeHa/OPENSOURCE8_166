@@ -44,6 +44,10 @@
 
 해당 코드를 사용하여 사용자가 섭취한 음식의 **총 칼로리 데이터**를 얻을 수 있다.
 
+
+
+[오픈소스 github : https://github.com/doinglab/FoodLensSDK]
+
 #### DFD
 
 
