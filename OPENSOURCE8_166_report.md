@@ -53,7 +53,7 @@ OpenPose 전에도 이렇게 인간의 스켈레톤을 찾는 방법은 연구�
 
   Bottom-up 방식은 이미지 상에서 모든 신체 부위를 먼저 찾아내고, 이후에 찾아낸 신체 부위가 어떻게 연결되는지 추론 하는 방법을 말한다.
 
-  		- 이미지에서 joint들을 먼저 찾고, joint들의 상관관계를 분석하여 이들을 연결하여 자세를 추정
+  	이미지에서 joint들을 먼저 찾고, joint들의 상관관계를 분석하여 이들을 연결하여 자세를 추정
 
   - 정확도는 Top-down 방식에 비해 떨어지지만, Object Detection 과정이 없기 때문에 속도가 빨라 실시간 처리에 사용 가능
 
@@ -86,8 +86,6 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 이후 Stage 2부터는 Stage 1의 출력인 Confidence Map(S)과 PAFs(L), VGG Network의 출력인 특징맵(F)을 조합해서 CNN의 입력으로 사용한다. 네트워크가 깊어질수록 앞에 위치한 layer는 학습의 영향이 줄어들기 때문에 좀 더 나은 결과를 얻기 위해 매 Stage마다 특징맵(F)을 사용한다. 네트워크의 각 Stage에서는 예측한 수치와 실제 훈련 데이터에 있는 정답과 비교를 통해 오차값을 구하고 이를 최소화하는 방향으로 네트워크를 학습시킨다.
 
 <hr>
-
-
 ### 한계
 
 - 학습되지 않은 희귀한 자세 (추정은 어느정도 하지만 떨리는 현상)
@@ -98,8 +96,6 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 - 원거리 스켈레톤 검출 잘 안됨 (원거리의 기준은 카메라 해상도, FOV마다 다르다.)
 
 <hr>
-
-
 ### 사용 결과 및 실행 결과
 
 사람의 몸에 장비를 장착하지 않고 사진이나 영상으로 사람의 자세를 추출할 수 있다.
@@ -119,7 +115,13 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 #### 오픈소스 출처
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
-=======
+
+#### License
+
+- ACADEMIC OR NON-PROFIT ORGANIZATION NONCOMMERCIAL RESEARCH USE ONLY
+
+- 주소 : https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/LICENSE
+
 ## **Talend Open Studio for Data Integration**
 
 #### Talend Open Studio란?
@@ -189,7 +191,7 @@ https://google.github.io/mediapipe/solutions/pose_classification.html
 https://google.github.io/mediapipe/solutions/pose
 #### DFD
 
-![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/202886656-3e3a4d51-1360-4157-b3a9-210ad6fe2f08.png)
+![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/203985749-e0714078-d210-4306-98da-4885645b5ec6.jpg)
 
 #### 결론
 
