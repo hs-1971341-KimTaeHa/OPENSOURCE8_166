@@ -10,7 +10,7 @@
 
 #### 서비스 설명
 
-
+https://patterns-wipe-635163.framer.app/ (어플 UI 예시)
 
 #### 유사서비스 분석
 
