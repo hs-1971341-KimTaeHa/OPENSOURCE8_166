@@ -116,6 +116,7 @@ Openpose(아래쪽 평평한 두 개의 선)의 추론 시간은 이미지 내�
 
 ![Realtime, Multi-Person](https://post-phinf.pstatic.net/MjAyMDAzMjBfMzQg/MDAxNTg0Njg3MzE5NDY5.6IwpJitMU6uSdP4RS_vuKaAGaVglQArkZ8WESZh3pfQg.c1fMTKvu_L5NOcJk4qTYjtwYtfV_EkDff5aqz1k5uJog.JPEG/humanpose_03.jpg?type=w1200)
 
+=======
 네트워크의 입력은 높이(h) x 폭(w) 크기의 컬러 이미지이고 VGG-19 네트워크의 일부를 통과하게 된다. VGG 네트워크는 옥스포드대학교의 Visual Geometry Group에서 개발했다. 세계 최대 이미지 인식 경연대회인 ILSVRC(ImageNet Large Scale Visual Recognition Competition) 2014년 행사에서 GoogleNet과 함께 주목을 받으며 근소한 차이로 2위를 차지했지만, 구조가 간단하여 이해하기 쉽고 변형을 시켜가면서 테스트하기 용이한 장점이 있다.
 
 이미지가 VGG-19 네트워크의 입력으로 들어가면, CNN의 Convolution Layer(C)와 Pooling Layer(P)를 거쳐서 특징맵(F)을 생성하게 된다. 특징맵(F)은 처음에는 큰 의미 없는 내용이 담겨 있지만, 그 내용을 학습 데이터와 비교하며 차이점을 점점 줄여나가는 방향으로 최적화를 하면 학습 데이터에 맞는 특징을 갖게 될 것이다. 그리고 이 특징맵(F)은 Stage 1의 입력으로 들어간다.
@@ -161,6 +162,57 @@ Stage 1은 2개의 브랜치로 나누어진다. 첫 번째 브랜치의 CNN(p1)
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
 =======
+
+##### Recommders : 내부 탑재된 알고리즘을 통해 유저에게 추천을 해주는 오픈소스
+
+##### 원리
+
+1.  데이터 준비 : 각 추천 알고리즘에 대한 데이터 준비 및 로드
+
+2.  모델 : 다양한 고전 및 딥 러닝 추천 알고리즘을 사용하여 모델을 구축
+
+   Ex) 교대 최소 제곱 (ALS), eXtreme Deep Factorization Machines (xDeepFM)
+
+3.  평가 : 오프라인 메트릭을 사용하여 자체적인 알고리즘 평가
+
+4.  모델 선택 및 최적화 : 추천 모델에 대한 하이퍼 파라미터 값 조정 및 최적화
+
+##### 소스 구현
+
+내부에 탑재된 알고리즘을 활용하여 동일한 부위 및 운동 기구에 해당하는 영상을 찾는다.
+
+너비 또는 깊이에 따른 적절한 탐색 방법을 활용하여 우선적으로 해당 부위의 운동 영상을 탐색한다.
+
+동일한 운동 기구를 찾아 일치 여부를 확인한 후 요청한 회원에게 지원할 준비를 마친다.
+
+이때, 알고리즘은 1순위로 동일한 운동 부위 및 운동 기구, 2순위로 동일한 운동 부위, 
+3순위로 동일한 운동 기구의 순서를 지니고 있게 된다.
+
+또한, 운동 뿐만 각기 다른 체형의 회원들마다 권장되는 일일 섭취량 및 식자재, 음식들 또한 지원한다.
+
+##### 소스 구현 시뮬레이션
+
+Ex1) A는 어깨 부위를 덤벨이라는 운동 기구를 통해 진행한다. 이때, 덤벨 숄더 프레스를 5세트
+
+진행하였고, 시스템에서는 어깨 부위의 영상감을 알고리즘을 통해 찾아내고, 회원이 이용한
+
+운동 기구를 체크하여 비슷 또는 동일한 기구와의 유사함을 확인한다. 이후 요청자에게 지원할 준비를
+
+마친다.
+
+Ex2) B는 체지방률이 많이 높고, 운동을 막 시작한 새싹 회원이다. 이때, 자신의 kcal 계산을 하였다.
+
+시스템은 B의 계산 값을 확인하여 인바디 값에 대입하고, 동일한 체형의 일일 섭취량을 확인한다.
+
+이후 점진적으로 체지방을 감량을 도울 수 있게 몸에 좋은 식자재 및 음식들을 추천한다.
+##### 출처 및 언어, 라이선스
+
+출처 : https://github.com/microsoft/recommenders.git
+
+언어 : Python
+
+라이선스 : MIT license
+=====
 ## **Talend Open Studio for Data Integration**
 
 #### Talend Open Studio란?
