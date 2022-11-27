@@ -317,7 +317,7 @@ https://google.github.io/mediapipe/solutions/pose_classification.html
 https://google.github.io/mediapipe/solutions/pose
 #### DFD
 
-![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/203985749-e0714078-d210-4306-98da-4885645b5ec6.jpg)
+![DFD_오픈소스](https://user-images.githubusercontent.com/70803824/204133211-210a4642-f737-4fd3-9c06-964227ab7b5c.jpg)
 
 <hr>
 
